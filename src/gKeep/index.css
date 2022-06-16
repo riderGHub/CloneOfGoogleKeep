@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+}
+
+.footer{
+    width: 100vw;
+    background-color: blueviolet;
+    text-align: center;
+    position:fixed;
+    bottom: 0;
+    
+}
+
+
+.header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    max-height: 30px;
+    margin: 0;
+    padding: 0.5vw 0;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    background-color: orange;
+    text-align: center;
+    font-size: x-large;
+}
+.logo{
+    position: absolute;
+    left: 10px;
+}
+
+.head{
+    position: absolute;
+    width: 100%;
+    left: -20px;
+}
+
+.main_div{
+    margin-top: 10px;
+    background-color: aqua;
+    margin-bottom: 20px;
+    padding-left: 3.5px;
+    position:relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 35px;
+    width: 30vw;
+    min-width: 200px;
+    height: 20vh;
+    min-height: 130px;
+    border: 1px solid green;
+    border-radius: 1vw;
+}
+.title{
+    text-align: center;
+    background-color: aqua;
+    width: 96%;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: large;
+    margin: 2px 0;
+    outline: none;
+}
+.content{
+    text-align: center;
+    background-color: aqua;
+    width: 96%;
+    outline: none;
+    border: none;
+    row-gap: 4px;
+
+}
+
+.btnM{
+    position: fixed;
+    right: -0.5vw;
+    color: blue;
+    font-size: large;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.listed{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100vw;
+    height: auto;
+}
+
+.listchild{
+    background-color: rgb(192, 248, 81);
+    margin: 5px;
+  position: relative;
+  padding: 2px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  overflow-wrap: break-word;   
+  border: 1px solid grey;
+   width: max-content;
+  max-width: 28vw;
+  height: fit-content;
+}
+.btnC{
+    position: absolute;
+    cursor: pointer;
+    bottom: -2vh;
+    right: -1vw;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(106, 106, 175);
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 400px) {
+    .header{
+        font-size: small;
+    }
+    .logo{
+        width: 15px;
+        left: -1.5px;
+    }
+    .main_div{
+        width: 99vw;
+        max-width: 99vw;
+    }
+    .listchild{
+        width: 99vw;
+        max-width: 99vw;
+    }
+    
+}
